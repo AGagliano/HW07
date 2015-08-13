@@ -6,3 +6,21 @@
 # In your final submission: 
 #  - Do not print anything extraneous!
 #  - Do not put anything but pass in main()
+#########################################################################
+
+def cumulative_sum(l):
+	'''Takes a flat list of integers and returns a list of the 
+	cumulative sums.
+
+	Function uses list comprehension to sum over the indices of 
+	the given list.
+	'''
+	l_cumsum = [sum(l[:i+1]) for i in range(len(l))]
+	return l_cumsum
+
+#########################################################################
+def main():
+	pass
+
+if __name__ == "__main__":
+	main()
